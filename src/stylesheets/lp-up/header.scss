@@ -1,0 +1,16 @@
+nav li a {
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+nav li a {
+
+  &:hover {
+    background: $primary-color;
+    border-radius: 3px;
+  }
+  &:focus {
+    background: $secondary-color;
+    border-radius: 3px;
+  }
+}

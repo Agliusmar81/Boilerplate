@@ -1,0 +1,65 @@
+/******** FORM *********/
+
+#contact-form {
+  background-color: $primary-color;
+  background-image: url("../../src/images/world.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+  color: $white;
+
+  hr {
+    @include title-line ($secondary-color);
+  }
+
+  label {
+    display: block;
+    padding-bottom: 5px;
+  }
+  
+  input {
+    height: 40px;
+    border-radius: 3px;
+    padding: 0 15px;
+  }
+  
+  textarea {
+    border-radius: 3px;
+    padding: 15px;
+  }
+  
+  form {
+    margin: 0 -15px;
+  }
+
+}
+
+#contact-form .submit {
+  text-align: center;
+}
+
+#contact-form .form-group {
+  padding: 0 0 10px;
+}
+
+#contact-form input, #contact-form textarea, #contact-form select {
+  display: block;
+  width: 100%;
+  border: 1px solid  #D8D8D8;
+}
+
+#contact-form .form-wrapper .message, #contact-form .form-wrapper .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 15px;
+}
+
+#contact-form .form-wrapper .message .form-group {
+  height: 100%;
+}
+
+#contact-form .form-wrapper .message textarea {
+  height: calc(100% - 23px);
+}
